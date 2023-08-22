@@ -1,16 +1,4 @@
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrarse</title>
-    
-</head>
-
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300;1,500&display=swap');
 
 body {
     margin: 0;
@@ -27,7 +15,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 770px;
+    height: 800px;
     background: white;
     border-radius: 20px;
     box-shadow: 2px 4px 6px;
@@ -147,60 +135,9 @@ input[type="submit"]:hover{
     transition: .5s; 
     margin-top: 5px;
 }
-</style>
 
-<body>
-    <div class="contenedor">
-        <h1>Registrarse</h1>
-        <form method="post" action="">
-            <select id="tipo_documento" name="tipoDoc">
-                <option>Cedula de ciudadania</option>
-                <option>Cedula extrangera</option>
-                </select>
-                <?php
-                include('conexionBD.php');
-                ?>
-            <div class="registro">
-                <input type="tel" name="numDoc">
-                <label>Numero de documento</label>
-            </div>
-            <div class="registro">
-                <input type="text" name="nombre">
-                <label>Nombre</label>
-            </div>
-            <div class="registro">
-                <input type="text" name="apellido">
-                <label>Apellido</label>
-            </div>
-            <div class="registro">
-                <input type="email" name="correo">
-                <label>Correo</label>
-            </div>
-            <div class="registro">
-                <input type="tel" name="tel">
-                <label>Telefono</label>
-            </div>
-            <div class="registro">
-                <input type="text" name="direccion">
-                <label>Dirección</label>
-            </div>
-            <div class="registro">
-                <input type="password" name="pass">
-                <label>Contraseña</label>
-            </div>
-            <div>
-                <input type="submit" value="Registrarse" id="btn_registrarse" name="btnGuardar"/>
-            </div>
-            
-
-            <a href="./index.php">Atras</a>
-            
-        </div>
-        </form>
-
-    </div>
-
-
-
-</body>
-</html>
+.registro a{
+    text-decoration: none;
+    color: #3498DB;
+    border-bottom: none;
+}
