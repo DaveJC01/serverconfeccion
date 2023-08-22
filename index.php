@@ -94,6 +94,7 @@ form .nombre_usuario {
     background: linear-gradient(150deg, #797D7F, #3498DB );
     border-radius: 20px;
     transition: .5s;  
+    margin: 0; 
 }
 
 #btn_registrarse:hover{
@@ -174,10 +175,10 @@ input[type="submit"]:hover{
     <!-- Loging -->
     <div class="Registro">
         <h1>Iniciar sesión</h1>
-        <form method="post" action="">
-        <?php
-                include('./controladores/controlador.php')
-                ?>
+        <form method="post" >
+            <?php
+                include('conexionBD.php')
+                ?> 
             <div class="nombre_usuario">
                 <input type="text" name="users">
                 <label>Digite su usuario</label>
@@ -190,7 +191,7 @@ input[type="submit"]:hover{
                 <div class="btn">
                     <input type="submit" value="Ingresar" id="iniciar_btn" name="btnIngresar"/>
                 </div>
-                <input type="submit" value="Registrarse" id="iniciar_btn" name="btnRegistrar"/>
+                <input type="submit" value="Registrarse" id="btn_registrarse" name="btnRegistrar"/>
             </div>
         </form>
     </div>

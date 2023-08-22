@@ -158,8 +158,7 @@ input[type="submit"]:hover{
                 <option>Cedula extrangera</option>
                 </select>
                 <?php
-                include('conexion/conexionBD.php');
-                include('controladores/controlador_registrar.php');
+                include('conexionBD.php');
                 ?>
             <div class="registro">
                 <input type="tel" name="numDoc">
