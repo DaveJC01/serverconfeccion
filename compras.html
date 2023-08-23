@@ -6,128 +6,129 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Compras.css">
     <title>Compras</title>
-    <link rel="stylesheet" href="estilos2.css">
+    
 </head>
 <body>
-    <h1 class="jiji">Confecciones E/R</h1>
 
-    <!-- BARRA DE SERVICIOS -->
-    <nav class="navegacion">
-        <ul class="servicio">
-            <li><a href="#">Servicios</a>
-                <ul class="submenu">
-                    <li><a href="#">Angendar citas</a>
-                    <li><a href="#">Aplazar citas</a>
-                    <li><a href="#">Cancelar citas</a>
+    <header >
+
+        <div class="fijo"> 
+        <h1 class="jiji">Confecciones E/R</h1>
+
+            <!-- BARRA DE SERVICIOS -->
+            <nav class="navegacion">
+                <ul class="servicio">
+                    <li><a href="#">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="#">Angendar citas</a>
+                            <li><a href="#">Aplazar citas</a>
+                            <li><a href="#">Cancelar citas</a>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contactanos</a></li>
+                    <li><a href="#">Ayuda</a></li>
+            
                 </ul>
-            </li>
-            <li><a href="#">Contactanos</a></li>
-            <li><a href="#">Ayuda</a></li>
-    
-        </ul>
-    </nav>
+            </nav>
 
-        <!-- BARRA DE BUSQUEDA -->
-        <div class="busqueda">
-            <input class="Barra" type="text" placeholder="Buscar...">
-                <div class="BTN">
-                    <i class="fa fa-search"></i>
-                </div>
-        </div>  
-
-        <!-- BOTON CARRITO -->
-        <div class="inconoCarrito">
-            <button class="compra"><i class="fa-solid fa-cart-shopping"></i></button>
-        </div>
-
-              <!-- CARRITO DE COMPRAS -->
-              <div class="carrito_compras">
-                <div class="heder_compras">
-                    <h2>Tu Carrito</h2>
-                    <button class="carrar_carrito"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <div class="carrito_itens"> 
-                     <!-- <div class="carrito_iten">
-                        <img src="./img/bolso.jpg" alt="" width="80px">
-                        <div class="carrito_itens_detalles">
-                            <span class="carrito_titulo">Bolso</span>
-                            <div class="selector_cantidad">
-                                <i class="fa-solid fa-minus restar_cantidad" style="color: #000000;"></i>
-                                <input type="text" value="1" class="carrito_itens_cantidad" disabled>
-                                <i class="fa-solid fa-plus sumar_cantidad" style="color: #000000;"></i>
-                            </div>
-                            <span class="carrito_itens_precio">$50.000,00</span>
+                <!-- BARRA DE BUSQUEDA -->
+                <div class="busqueda">
+                    <input class="Barra" type="text" placeholder="Buscar...">
+                        <div class="BTN">
+                            <i class="fa fa-search"></i>
                         </div>
-                        <span class="btn_eliminar">
-                            <i class="fa-solid fa-trash" style="color: #000000;"></i>
-                        </span>
-                    </div> -->
+                </div>  
+
+                <!-- BOTON CARRITO -->
+                <div class="inconoCarrito">
+                    <button class="compra"><i class="fa-solid fa-cart-shopping"></i></button>
                 </div>
-                <div class="carrito_total">
-                    <div class="fila">
-                        <strong>Tu total</strong>
-                        <span class="carrito_itens_precio_total">
-                            00.000,00
-                        </span>
+
+                    <!-- CARRITO DE COMPRAS -->
+                    <div class="carrito_compras">
+                        <div class="heder_compras">
+                            <h2>Tu Carrito</h2>
+                            <button class="carrar_carrito"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                        <div class="carrito_itens"> 
+                            <!-- <div class="carrito_iten">
+                                <img src="./img/bolso.jpg" alt="" width="80px">
+                                <div class="carrito_itens_detalles">
+                                    <span class="carrito_titulo">Bolso</span>
+                                    <div class="selector_cantidad">
+                                        <i class="fa-solid fa-minus restar_cantidad" style="color: #000000;"></i>
+                                        <input type="text" value="1" class="carrito_itens_cantidad" disabled>
+                                        <i class="fa-solid fa-plus sumar_cantidad" style="color: #000000;"></i>
+                                    </div>
+                                    <span class="carrito_itens_precio">$50.000,00</span>
+                                </div>
+                                <span class="btn_eliminar">
+                                    <i class="fa-solid fa-trash" style="color: #000000;"></i>
+                                </span>
+                            </div> -->
+                        </div>
+                        <div class="carrito_total">
+                            <div class="fila">
+                                <strong>Tu total</strong>
+                                <span class="carrito_itens_precio_total">
+                                    00.000,00
+                                </span>
+                            </div>
+                            <button class="btn_pagar">Pagar <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></button>
+                        </div>
                     </div>
-                    <button class="btn_pagar">Pagar <i class="fa-solid fa-bag-shopping" style="color: #000000;"></i></button>
-                </div>
-            </div>
 
 
-        <!-- BOTON DE MENSAJES -->
-        <div class="inconoMensaje">
-            <button class="btn_mensaje"><i class="fa-solid fa-message"></i></button>
-        </div> 
+                <!-- BOTON DE MENSAJES -->
+                <div class="inconoMensaje">
+                    <button class="btn_mensaje"><i class="fa-solid fa-message"></i></button>
+                </div> 
 
-         <!-- SECCION DE MENSAJES -->
-         <div class="contenedor_mensajes">
-            <div class="heder_mensajes">
-                <h2>Chat</h2>
-                <button class="carrar_mensaje"><i class="fa-solid fa-xmark"></i></button>  
-            </div> 
-                
-                <div class="mensaje_itens">
-                    <input type="text" placeholder="Escriba su mensaje..."  required>
-                    <div class="enviar"><i class="fa-solid fa-paper-plane"></i></div>
+                <!-- SECCION DE MENSAJES -->
+                <div class="contenedor_mensajes">
+                    <div class="heder_mensajes">
+                        <h2>Chat</h2>
+                        <button class="carrar_mensaje"><i class="fa-solid fa-xmark"></i></button>  
+                    </div> 
+                        
+                        <div class="mensaje_itens">
+                            <input type="text" placeholder="Escriba su mensaje..."  required>
+                            <div class="enviar"><i class="fa-solid fa-paper-plane"></i></div>
+                            
+                        </div>
+        </div>
+                <!-- BOTON DE CONFIGURACIONES -->
+                <div class="perfiles">
+                    <button class="btn_perfil" ><i class="fa-solid fa-user"></i></button>
+                    </div>
+
+            <!-- SECCION DEL PERFIL -->
+            <div class="contenedor_perfil">
+                <div class="heder_perfil">
+                    <h2 class="perfil">Perfil</h2>
+                    <button class="carrar_perfil"><i class="fa-solid fa-xmark"></i></button>  
+                </div> 
+                    <div class="informacion">
+                        <div class=" foto_perfil">
+                            <div class="foto">
+                            <img src="./img/foto perfil.jpeg" width="150px">   
+                            </div>
+                        
+                            <h2 class="nombre">Jean Carlos David </h2>
+                        </div>
+                        <div class="numero_centa">Cuenta: 00001</div>
+                        <div class="datos">
+                            <button class="btn_datos" onclick="actualizarDatos()">Actualizar datos personales</button>
+                            <button class="cerrar_sesion" onclick="cerrarSesion()">Cerrar sesión</button>
+                        </div>
                     
-                </div>
- </div>
-        <!-- BOTON DE CONFIGURACIONES -->
-        <div class="perfiles">
-            <button class="btn_perfil" ><i class="fa-solid fa-user"></i></button>
-            </div>
-
-    <!-- SECCION DEL PERFIL -->
-    <div class="contenedor_perfil">
-        <div class="heder_perfil">
-            <h2 class="perfil">Perfil</h2>
-            <button class="carrar_perfil"><i class="fa-solid fa-xmark"></i></button>  
-        </div> 
-            <div class="informacion">
-                <div class=" foto_perfil">
-                    <div class="foto">
-                      <img src="/img/foto perfil.jpeg" width="150px">   
                     </div>
-                   
-                    <h2 class="nombre">Jean Carlos David </h2>
-                </div>
-                <div class="numero_centa">Cuenta: 00001</div>
-                <div class="datos">
-                    <button class="btn_datos" onclick="actualizarDatos()">Actualizar datos personales</button>
-                    <button class="cerrar_sesion" onclick="cerrarSesion()">Cerrar sesión</button>
-                </div>
-               
-            </div>
-           
-</div>
-
-    <header>
-        <!-- IMAGEN DE FONDO -->
+        </div>
+    </div>
     </header>
-
-    <section class="contenedor">
+    <div class="contenedor">
         <!-- CONTENEDOR DE LOS ELEMENTOS -->
    <div class="contenedor_itens">
             <div class="itens">
@@ -194,8 +195,9 @@
 
 
         
-    </section>
+    </div>
 <script src="app_compras.js"></script>
+<script src="fijo.js"></script>
 </body>
 </html>
 
