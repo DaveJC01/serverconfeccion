@@ -15,7 +15,7 @@ if (!empty($_POST["btnIngresar"])) {
 		$numero_registros = mysqli_num_rows($resultado);
 		if($numero_registros != 0){
 		#verificar si la informacon de la base de datos es correcta
-			echo "<script>window.location= 'compras.html' </script>";
+			echo "<script>window.location= './Compras/compras.html' </script>";
 		}else {
 			echo ('<div class="alert">USUARIO O CONTRASEÑA INCORRECTOS</div>');
 		};	
