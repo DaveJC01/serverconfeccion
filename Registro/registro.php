@@ -10,7 +10,7 @@ if (!empty($_POST["btnGuardar"])) {
      empty($_POST["tel"]) or 
      empty($_POST["direccion"]) or
      empty($_POST["password"])) {
-		echo ('<div class="alert">UNO DE LOS CAMPOS ESTA VACIO</div>');
+		echo "<script> alert('LOS CAMPOS ESTAN VACIOS');window.location= 'registro.html' </script>";
 		
 	}   else {
         #Si los los campos no estan registrados insertar en la base de datos________________________________________________________
@@ -27,10 +27,11 @@ if (!empty($_POST["btnGuardar"])) {
 
         #Verifica si el usuario es registrado o no_________________________________________________________________________________
         if ($sqls==1) {
-            header
-            echo ('<div class="registrado">USUARIO REGISTRADO CORRECTAMENTE</div>');
+            echo "<script> alert('USUARIO REGISTRADO CORRECTAMENTE');window.location= 'registro.html' </script>";
+           
         } else {
-            echo ('<div class="alert">USUARIO NO REGISTRADO</div>');
+           
+            echo "<script> alert('USUARIO NO REGISTRADO<');window.location= 'registro.html' </script>";
         }
     };
 }; 
