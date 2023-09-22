@@ -1,6 +1,7 @@
 #productos_container{
     width: 500px;
     margin: auto;
+    
 }
  
  .targeta-producto{
@@ -17,5 +18,11 @@
 
  #totales, #carrito_vacio {
     text-align: center;
+ }
+
+ @media (max-width: 760px){
+   .targeta-producto img{
+      height: 120px;
+   }
  }
 

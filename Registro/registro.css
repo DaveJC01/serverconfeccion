@@ -136,8 +136,18 @@ input[type="submit"]:hover{
     margin-top: 5px;
 }
 
-.registro a{
+.text-registro a{
     text-decoration: none;
     color: #3498DB;
     border-bottom: none;
+}
+
+@media (max-width: 760px){
+    .contenedor{
+        width: 320px;
+        margin-top: 20px;
+    }
+    .text-registro {
+        font-size: 13px;
+    }
 }

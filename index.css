@@ -173,3 +173,15 @@ input[type="submit"]:hover{
     text-decoration: none;
     color: #3498DB;
 }
+
+@media (max-width: 760px){
+    .Registro{
+        width: 320px;
+        height: 410px;
+
+    }
+    .registro{
+        font-size: 15px;
+    }
+    
+}

@@ -4,6 +4,7 @@
     justify-content: center;
     gap: 40px;
     transition: all .5s;
+    margin-bottom: 15px;
 }
 
 .targeta-producto{
@@ -29,4 +30,12 @@
 
 h3, p {
     margin: 5px 0;
+}
+
+@media (max-width: 760px){
+
+    .targeta-producto{
+        max-width: 100px;
+    }
+   
 }
